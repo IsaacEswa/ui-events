@@ -99,8 +99,7 @@ a[href="#design"] {
 
 
 /* Hieronder komen jouw animaties en stijlen */
-a [href="#frontend"] {}
-
+/* 1. FRONTEND LINK - SCALE ANIMATIE */
 .scale {
   animation-name: scale;
   animation-duration: 1s;
@@ -118,5 +117,26 @@ a [href="#frontend"] {}
 
   100% {
     transform: scale(1);
+  }
+}
+
+/* 2. & LINK - TRANSLATEY ANIMATIE */
+.upanddown {
+  animation-name: upanddown;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes upanddown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1em);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
