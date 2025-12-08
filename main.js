@@ -120,3 +120,26 @@ function rotateHandler() {
 
 // Stap 4: Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
 theLink.addEventListener('animationend', rotateHandler);
+
+// 8. ------------- FLOW -------------
+// Stap 1: querySelector
+let flowLink = document.querySelector('a[href="#flow"]')
+
+// Stap 2: addEventListener Mousedown and Mouseup
+flowLink.addEventListener('mousedown', mousePressed)
+flowLink.addEventListener('mouseup', mouseReleased)
+
+
+// Stap 3: mousedown functie toevoegen
+function mousePressed() {
+  console.log("Mouse is down!");
+
+}
+
+function mouseReleased() {
+  console.log("Mouse is up!");
+
+}
+
+
+

@@ -209,3 +209,22 @@ a[href="#design"] {
     rotate: 0deg;
   }
 }
+
+/* 7. FLOW LINK - SHAKE ANIMATIE */
+.flow-flip {
+  transform: scaleX(0);
+}
+
+.flow-flipped {
+  transform: scaleX(-1);
+}
+
+/* @keyframes flow-flip {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(-1);
+  }
+} */
