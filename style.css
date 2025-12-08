@@ -243,16 +243,24 @@ a [href="#user"] {}
 /* 7. INTERFACE LINK ----- */
 /* a [href="#interface"] */
 
-.ballon {
+/* .ballon {
   animation-name: interface-ballon;
-  animation-duration: .5s;
-  /* animation-fill-mode: forwards; */
-  /* pointer-events: none; */
+  animation-duration: 5s;
   animation-iteration-count: 1;
+} */
 
+a[href="#interface"] {
+  transition:
+    scale 3s ease,
+    filter 3s ease;
 }
 
-@keyframes interface-ballon {
+.ballon {
+  scale: 5;
+  filter: blur(.2em);
+}
+
+/* @keyframes interface-ballon {
   0% {
     scale: 1;
   }
@@ -261,4 +269,4 @@ a [href="#user"] {}
     scale: 5;
     filter: blur(.2em);
   }
-}
+} */
