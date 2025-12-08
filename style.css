@@ -141,7 +141,7 @@ a[href="#design"] {
   }
 }
 
-/* 4. & DEVELOPMENT - SHAKE ANIMATIE */
+/* 4. DEVELOPMENT LINK - SHAKE ANIMATIE */
 .shake {
   animation-name: shake;
   animation-duration: .2s;
@@ -163,5 +163,26 @@ a[href="#design"] {
     transform: translateX(0);
     rotate: 0deg;
 
+  }
+}
+
+/* 5. SPRINT 5 LINK - SHAKE ANIMATIE */
+.focus-color {
+  animation-name: focus-color;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+}
+
+@keyframes focus-color {
+  0% {
+    background-color: var(--highlight-primary);
+  }
+
+  50% {
+    background-color: var(--highlight-secondary);
+  }
+
+  100% {
+    background-color: var(--highlight-primary);
   }
 }

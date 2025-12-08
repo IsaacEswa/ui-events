@@ -57,7 +57,7 @@ function translateHandler() {
 andLink.addEventListener('animationend', translateHandler)
 
 
-//4. ------------- % DEVELOPMENT -------------
+//4. ------------- DEVELOPMENT -------------
 // Stap 1: querySelector
 let developmentLink = document.querySelector('a[href="#development"]')
 
@@ -70,4 +70,19 @@ function shakeHandler() {
 }
 
 // Stap 4: Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
-developmentLink.addEventListener('animationend', shakeHandler)
+developmentLink.addEventListener('animationend', shakeHandler);
+
+//5. ------------- SPRINT 5 -------------
+// Stap 1: querySelector
+let sprintLink = document.querySelector('a[href="#sprint-5"]')
+
+// Stap 2: addEventListener
+sprintLink.addEventListener('focusin', bgColorHandler)
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+function bgColorHandler() {
+  sprintLink.classList.toggle('focus-color')
+}
+
+// Stap 4: Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
+sprintLink.addEventListener('focusout', bgColorHandler);
