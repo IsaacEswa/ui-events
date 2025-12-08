@@ -144,5 +144,23 @@ function mouseReleased() {
 
 }
 
+// 8. ------------- USER -------------
+// Stap 1: querySelector
+let userLink = document.querySelector('a[href="#user"]')
+
+// Stap 2: addEventListener event.key
+document.addEventListener('keyup', keyHandler)
+// userLink.addEventListener('keyup', KeyHandler)
+
+// Stap 3: (Callback functie met) class toevoegen met toggle
+function keyHandler(event) {
+  // userLink.classList.toggle('user-active');
+  if (event.key === "k") {
+    userLink.classList.toggle('user-active');
+    // console.log("K key was pressed!");
+  }
+}
+
+
 
 

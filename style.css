@@ -141,7 +141,7 @@ a[href="#design"] {
   }
 }
 
-/* 4. DEVELOPMENT LINK - SHAKE ANIMATIE */
+/* 4. DEVELOPMENT LINK ----- */
 .shake {
   animation-name: shake;
   animation-duration: .2s;
@@ -166,7 +166,7 @@ a[href="#design"] {
   }
 }
 
-/* 5. SPRINT 5 LINK - SHAKE ANIMATIE */
+/* 5. SPRINT 5 LINK ----- */
 .focus-color {
   animation-name: focus-color;
   animation-duration: 1s;
@@ -187,9 +187,9 @@ a[href="#design"] {
   }
 }
 
-/* 5. FIX LINK - SHAKE ANIMATIE */
+/* 5. FIX LINK ----- */
 
-/* 6. THE LINK - SHAKE ANIMATIE */
+/* 6. THE LINK ----- */
 .the-rotate {
   animation-name: the-rotate;
   animation-duration: 1s;
@@ -210,7 +210,7 @@ a[href="#design"] {
   }
 }
 
-/* 7. FLOW LINK - SHAKE ANIMATIE */
+/* 7. FLOW LINK ----- */
 /* .flow-flip {
   transform: scaleX();
 } */
@@ -230,3 +230,12 @@ a [href="#flow"] {}
     transform: scaleX(-1);
   }
 } */
+
+
+/* 7. USER LINK ----- */
+a [href="#user"] {}
+
+.user-active {
+  color: var(--highlight-secondary);
+  border: 0.1rem solid var(--highlight-secondary);
+}
