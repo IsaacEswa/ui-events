@@ -86,3 +86,24 @@ function bgColorHandler() {
 
 // Stap 4: Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
 sprintLink.addEventListener('focusout', bgColorHandler);
+
+//6. ------------- FIX -------------
+// Stap 1: querySelector
+let fixLink = document.querySelector('a[href="#fix"]')
+
+// Stap 2: addEventListener Pointer erop
+fixLink.addEventListener('pointerover', showHoverText)
+// addEventListener Pointer eraf
+fixLink.addEventListener('pointerout', showOriginalText)
+
+// Stap 3: (Callback functie met) textContent aanpassen
+function showHoverText() {
+  fixLink.textContent = "Fixed!"
+}
+
+// (Callback functie met) textContent terug veranderen
+
+function showOriginalText() {
+  fixLink.textContent = "Fix"
+}
+
