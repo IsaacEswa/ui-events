@@ -102,8 +102,21 @@ function showHoverText() {
 }
 
 // (Callback functie met) textContent terug veranderen
-
 function showOriginalText() {
   fixLink.textContent = "Fix"
 }
 
+// 7. ------------- THE -------------
+// Stap 1: querySelector
+let theLink = document.querySelector('a[href="#the"]')
+
+// Stap 2: addEventListener Pointer eraf
+theLink.addEventListener('pointerout', rotateHandler)
+
+// Stap 3: (Callback functie met) class toevoegen met toggle
+function rotateHandler() {
+  theLink.classList.toggle('the-rotate')
+}
+
+// Stap 4: Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
+theLink.addEventListener('animationend', rotateHandler);

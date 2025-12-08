@@ -188,3 +188,24 @@ a[href="#design"] {
 }
 
 /* 5. FIX LINK - SHAKE ANIMATIE */
+
+/* 6. THE LINK - SHAKE ANIMATIE */
+.the-rotate {
+  animation-name: the-rotate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes the-rotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  50% {
+    rotate: 1turn;
+  }
+
+  100% {
+    rotate: 0deg;
+  }
+}
