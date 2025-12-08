@@ -25,7 +25,7 @@ designLink.addEventListener('animationend', jumpHandler)
 // Ga zelf verder met de overige elementen, aan de hand van de instructies
 
 // Maak bijvoorbeeld een scale animatie als je op de Frontend link klikt
-//1. FRONTEND LINK
+//1. ------------- FRONTEND LINK -------------
 // Stap 1: querySelector
 let frontendLink = document.querySelector('a[href="#frontend"]')
 
@@ -41,7 +41,7 @@ function scaleHandler() {
 // Stap 4: Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
 frontendLink.addEventListener('animationend', scaleHandler)
 
-//3. % LINK
+//3. ------------- % LINK -------------
 // Stap 1: querySelector
 let andLink = document.querySelector('a[href="#and"]')
 
@@ -54,4 +54,20 @@ function translateHandler() {
 }
 
 // Stap 4: Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
-frontendLink.addEventListener('animationend', translateHandler)
+andLink.addEventListener('animationend', translateHandler)
+
+
+//4. ------------- % DEVELOPMENT -------------
+// Stap 1: querySelector
+let developmentLink = document.querySelector('a[href="#development"]')
+
+// Stap 2: addEventListener
+developmentLink.addEventListener('dblclick', shakeHandler)
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+function shakeHandler() {
+  developmentLink.classList.toggle('shake')
+}
+
+// Stap 4: Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
+developmentLink.addEventListener('animationend', shakeHandler)
