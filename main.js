@@ -163,4 +163,11 @@ function keyHandler(event) {
 
 
 
+// 8. ------------- INTERFACE -------------
+// Stap 1: querySelector
+// Stap 2: addEventListener event.key (keydown)
+// Stap 3: (Callback functie met) class toevoegen met toggle
+
+
+
 

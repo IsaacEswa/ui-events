@@ -239,3 +239,26 @@ a [href="#user"] {}
   color: var(--highlight-secondary);
   border: 0.1rem solid var(--highlight-secondary);
 }
+
+/* 7. INTERFACE LINK ----- */
+/* a [href="#interface"] */
+
+.ballon {
+  animation-name: interface-ballon;
+  animation-duration: .5s;
+  /* animation-fill-mode: forwards; */
+  /* pointer-events: none; */
+  animation-iteration-count: 1;
+
+}
+
+@keyframes interface-ballon {
+  0% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 5;
+    filter: blur(.2em);
+  }
+}
