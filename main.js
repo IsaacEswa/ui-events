@@ -130,14 +130,17 @@ flowLink.addEventListener('mousedown', mousePressed)
 flowLink.addEventListener('mouseup', mouseReleased)
 
 
-// Stap 3: mousedown functie toevoegen
+// Stap 3: mousedown functie toevoegen (class toevoegen)
 function mousePressed() {
-  console.log("Mouse is down!");
-
+  flowLink.classList.add('flow-flipped');
+  // console.log("Mouse is down!");
 }
 
+// Stap 3: mouseup functie toevoegen (class removen)
 function mouseReleased() {
-  console.log("Mouse is up!");
+  flowLink.classList.remove('flow-flipped');
+
+  // console.log("Mouse is up!");
 
 }
 
