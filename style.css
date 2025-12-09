@@ -232,7 +232,7 @@ a [href="#flow"] {}
 } */
 
 
-/* 7. USER LINK ----- */
+/* 8. USER LINK ----- */
 a [href="#user"] {}
 
 .user-active {
@@ -240,7 +240,7 @@ a [href="#user"] {}
   border: 0.1rem solid var(--highlight-secondary);
 }
 
-/* 7. INTERFACE LINK ----- */
+/* 9. INTERFACE LINK ----- */
 /* a [href="#interface"] */
 
 /* .ballon {
@@ -270,3 +270,5 @@ a[href="#interface"] {
     filter: blur(.2em);
   }
 } */
+
+/* 10. EVENTS LINK ----- */

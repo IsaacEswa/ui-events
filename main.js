@@ -187,4 +187,29 @@ function deflateHandler(event) {
   }
 }
 
+// 9. ------------- EVENTS -------------
+// // Stap 1: querySelector
+// let eventsLink = document.querySelector('a[href="#events"]')
+
+// // Stap 2: addEventListener scroll event
+// document.addEventListener('scroll', scrollHandler)
+
+// function scrollHandler() {
+//   console.log("Scroll event detected!");
+// }
+
+// Stap 2: // Stap 2: addEventListener scroll event
+// Stap 3: (Callback functie met) class toevoegen met toggle
+
+// Stap 1: querySelector
+let eventsLink = document.querySelector('a[href="#events"]')
+
+// Stap 2: addEventListener scroll event
+document.addEventListener('scroll', scrollHandler)
+
+function scrollHandler() {
+  console.log("Scroll event detected!");
+}
+
+
 
