@@ -225,3 +225,16 @@ function wheelDownHandler(event) {
   }
 }
 
+
+
+// 10. ------------- INTERACTION -------------
+// Stap 1: querySelector
+let interactionLink = document.querySelector('a[href="#interaction"]')
+
+// Stap 2: addEventListener mousemove event
+interactionLink.addEventListener('mousemove', interactionHandler)
+
+// Stap 3:
+function interactionHandler() {
+  console.log("Mouse moved over interaction link!");
+}

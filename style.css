@@ -280,3 +280,14 @@ a[href="#events"] {
 .font-wheel {
   font-size: 3em;
 }
+
+/* 11. INTERACTION LINK ----- */
+a[href="#interaction"]:hover {
+  --x: 50%;
+  --y: 50%;
+  /* In het midden */
+
+  background: radial-gradient(circle at var(--x) var(--y),
+      var(--highlight-primary) .3em,
+      var(--highlight-secondary) .7em);
+}
