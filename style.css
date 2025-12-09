@@ -272,3 +272,11 @@ a[href="#interface"] {
 } */
 
 /* 10. EVENTS LINK ----- */
+a[href="#events"] {
+  transition:
+    font-size 3s ease;
+}
+
+.font-wheel {
+  font-size: 3em;
+}

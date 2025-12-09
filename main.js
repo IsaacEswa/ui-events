@@ -211,15 +211,17 @@ document.addEventListener('wheel', wheelDownHandler)
 
 function wheelUpHandler(event) {
   if (event.deltaY < 0) {
-    console.log("Scroll omhoog!");
-    // console.log("Scroll event detected!");
+    eventsLink.classList.add('font-wheel');
+
+    // console.log("Scroll omhoog!");
   }
 }
 
 function wheelDownHandler(event) {
   if (event.deltaY > 0) {
-    console.log("Scroll omlaag!");
-    // console.log("Scroll event detected!");
+    eventsLink.classList.remove('font-wheel');
+
+    // console.log("Scroll omlaag!");
   }
 }
 
