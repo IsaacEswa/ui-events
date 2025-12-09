@@ -232,19 +232,21 @@ function wheelDownHandler(event) {
 // Stap 1: querySelector
 let interactionLink = document.querySelector('a[href="#interaction"]');
 
-interactionLink.addEventListener('mousemove', showCoordinates);
-
-function showCoordinates(event) {
-  let x = event.clientX;
-  let y = event.clientY;
-  console.log('X coordinate: ' + x + ', Y coordinate: ' + y);
-}
-
 // // Stap 2: addEventListener mousemove event
-// interactionLink.addEventListener('mousemove', interactionHandler)
+// interactionLink.addEventListener('mousemove', showCoordinates);
 
-// // Stap 3:
-// function interactionHandler() {
-//   console.log("Mouse moved over interaction link!");
+// function showCoordinates(event) {
+//   let x = event.offsetX;
+//   let y = event.offsetY;
+//   console.log('X coordinate: ' + x + ', Y coordinate: ' + y);
 // }
+
+// Stap 2: addEventListener mousemove event
+interactionLink.addEventListener('mousemove', interactionHandler)
+
+// Stap 3:
+function interactionHandler(event) {
+  interactionLink.style.setProperty('--x', event.offsetX + 'px');
+  interactionLink.style.setProperty('--y', event.offsetY + 'px');
+}
 
