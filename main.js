@@ -205,11 +205,21 @@ function deflateHandler(event) {
 let eventsLink = document.querySelector('a[href="#events"]')
 
 // Stap 2: addEventListener scroll event
-document.addEventListener('scroll', scrollHandler)
+document.addEventListener('wheel', wheelUpHandler)
+document.addEventListener('wheel', wheelDownHandler)
 
-function scrollHandler() {
-  console.log("Scroll event detected!");
+
+function wheelUpHandler(event) {
+  if (event.deltaY < 0) {
+    console.log("Scroll omhoog!");
+    // console.log("Scroll event detected!");
+  }
 }
 
-
+function wheelDownHandler(event) {
+  if (event.deltaY > 0) {
+    console.log("Scroll omlaag!");
+    // console.log("Scroll event detected!");
+  }
+}
 
