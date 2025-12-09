@@ -120,7 +120,7 @@ a[href="#design"] {
   }
 }
 
-/* 2. & LINK - TRANSLATEY ANIMATIE */
+/* 3. & LINK - TRANSLATEY ANIMATIE */
 .upanddown {
   animation-name: upanddown;
   animation-duration: 1s;
@@ -187,9 +187,9 @@ a[href="#design"] {
   }
 }
 
-/* 5. FIX LINK ----- */
+/* 6. FIX LINK ----- */
 
-/* 6. THE LINK ----- */
+/* 7. THE LINK ----- */
 .the-rotate {
   animation-name: the-rotate;
   animation-duration: 1s;
@@ -210,7 +210,7 @@ a[href="#design"] {
   }
 }
 
-/* 7. FLOW LINK ----- */
+/* 8. FLOW LINK ----- */
 /* .flow-flip {
   transform: scaleX();
 } */
@@ -232,7 +232,7 @@ a [href="#flow"] {}
 } */
 
 
-/* 8. USER LINK ----- */
+/* 9. USER LINK ----- */
 a [href="#user"] {}
 
 .user-active {
@@ -240,7 +240,7 @@ a [href="#user"] {}
   border: 0.1rem solid var(--highlight-secondary);
 }
 
-/* 9. INTERFACE LINK ----- */
+/* 10. INTERFACE LINK ----- */
 /* a [href="#interface"] */
 
 /* .ballon {
@@ -271,7 +271,7 @@ a[href="#interface"] {
   }
 } */
 
-/* 10. EVENTS LINK ----- */
+/* 11. EVENTS LINK ----- */
 a[href="#events"] {
   transition:
     font-size 3s ease;
@@ -281,7 +281,7 @@ a[href="#events"] {
   font-size: 3em;
 }
 
-/* 11. INTERACTION LINK ----- */
+/* 12. INTERACTION LINK ----- */
 a[href="#interaction"]:hover {
   --x: 50%;
   --y: 50%;

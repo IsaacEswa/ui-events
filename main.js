@@ -144,7 +144,7 @@ function mouseReleased() {
 
 }
 
-// 8. ------------- USER -------------
+// 9. ------------- USER -------------
 // Stap 1: querySelector
 let userLink = document.querySelector('a[href="#user"]')
 
@@ -163,7 +163,7 @@ function keyHandler(event) {
 
 
 
-// 8. ------------- INTERFACE -------------
+// 10. ------------- INTERFACE -------------
 // Stap 1: querySelector
 let interfaceLink = document.querySelector('a[href="#interface"]')
 
@@ -187,7 +187,7 @@ function deflateHandler(event) {
   }
 }
 
-// 9. ------------- EVENTS -------------
+// 11. ------------- EVENTS -------------
 // // Stap 1: querySelector
 // let eventsLink = document.querySelector('a[href="#events"]')
 
@@ -227,7 +227,7 @@ function wheelDownHandler(event) {
 
 
 
-// 10. ------------- INTERACTION -------------
+// 12. ------------- INTERACTION -------------
 
 // Stap 1: querySelector
 let interactionLink = document.querySelector('a[href="#interaction"]');
